@@ -16,3 +16,6 @@ N.B.The specifications were somewhat vague regarding which variables from the or
 The author has taken the conservative approach of including any variable whose name contains "mean" or "std". 
 
 The packages tidyr and dplyr are required.
+
+To read the sample output dataset, out.txt:
+data <- read.table("out.txt")
