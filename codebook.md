@@ -30,10 +30,11 @@ Additional Variables:
 * fBodyGyroJerkMag
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-*gravityMean
-*tBodyAccMean
-*tBodyAccJerkMean
-*tBodyGyroMean
-*tBodyGyroJerkMean
+
+* gravityMean
+* tBodyAccMean
+* tBodyAccJerkMean
+* tBodyGyroMean
+* tBodyGyroJerkMean
 
 For further information, see UCIDataset/README.txt
