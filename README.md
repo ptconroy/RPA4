@@ -18,4 +18,4 @@ The author has taken the conservative approach of including any variable whose n
 The packages tidyr and dplyr are required.
 
 To read the sample output dataset, out.txt:
-data <- read.table("out.txt")
+data <- read.table("out.txt", header = TRUE)
