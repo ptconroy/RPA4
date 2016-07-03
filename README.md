@@ -17,5 +17,17 @@ The author has taken the conservative approach of including any variable whose n
 
 The packages tidyr and dplyr are required.
 
+Details on what it does:
+- Reads in all relevant data files from both the test and train datasets as data.tables.
+- binds the activities and subjects to each of the test and train data.tables
+- joins the test and train tables together
+- labels the columns using the variable names contained in UCIDataset/features.txt
+- because features.txt has duplicate names (derp) eliminate the duplicates (which aren't relevant to the mean or std anyhow)
+- selects out only the mean and std variables
+- replaces numbered activities with the names of the activities (WALKING, etc.)
+- returns a tidy data table containing the mean for each variable for each combination of subject and activity (with a pretty sweet one-liner).
+
+
+
 To read the sample output dataset, out.txt:
 data <- read.table("out.txt", header = TRUE)
